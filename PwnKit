@@ -1,0 +1,15 @@
+https://blog.qualys.com/vulnerabilities-threat-research/2022/01/25/pwnkit-local-privilege-escalation-vulnerability-discovered-in-polkits-pkexec-cve-2021-4034
+
+
+find pkexec
+
+which pkexec
+
+ls -la /usr/bin/pkexec
+
+-rwsr-xr-x 1 root root 31032 May 26  2021 /usr/bin/pkexec
+Seems to be vulnerable:
+1. set uid binary;
+2. from 2021
+
+
