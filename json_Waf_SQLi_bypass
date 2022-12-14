@@ -1,0 +1,8 @@
+
+
+SQLmap
+--tamper json_waf_bypass_postgres.py
+
+
+
+https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf
