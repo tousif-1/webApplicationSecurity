@@ -1,0 +1,13 @@
+Finding Directories
+gobuster dir -u http://192.168.195.132:8000 -w /usr/share/api/wordlist/commonapis160
+
+exclude response codes
+-x 200,202,301 -b 302
+
+Wordlist: https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api
+
+KiteRunner
+scan  
+kr scan http://<host> -w ~/api/wordlists/data/kiterunner/routes-large.kite
+brute force
+kr brute <host> -w ~/api/wordlists/data/automated/nameofwordlist.txt
